@@ -1,0 +1,323 @@
+{
+  "info": {
+    "_postman_id": "e6de2128-d1cf-46ca-9aa1-0e4646dfff0e",
+    "name": "programação do zero",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38743774"
+  },
+  "item": [
+    {
+      "name": "Olá Mundo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula8/olaMundo",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula8",
+            "olaMundo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Olá Mundo Personalizado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula8/olaMundoPersonalizado?nome=Alessandro",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula8",
+            "olaMundoPersonalizado"
+          ],
+          "query": [
+            {
+              "key": "nome",
+              "value": "Alessandro",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "calculadora",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula8/somar?valor1=6&valor2=4",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula8",
+            "somar"
+          ],
+          "query": [
+            {
+              "key": "valor1",
+              "value": "6",
+              "type": "text"
+            },
+            {
+              "key": "valor2",
+              "value": "4",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Media",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula8/Media?numero1=5&numero2=8&=",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula8",
+            "Media"
+          ],
+          "query": [
+            {
+              "key": "numero1",
+              "value": "5",
+              "type": "text"
+            },
+            {
+              "key": "numero2",
+              "value": "8",
+              "type": "text"
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Terreno",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Troco",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula8/Troco?preco unitario=20&quantidade=5&valor pago=100",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula8",
+            "Troco"
+          ],
+          "query": [
+            {
+              "key": "preco unitario",
+              "value": "20",
+              "type": "text"
+            },
+            {
+              "key": "quantidade",
+              "value": "5",
+              "type": "text"
+            },
+            {
+              "key": "valor pago",
+              "value": "100",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"desantanasantos@gmail.com\",\r\n    \"senha\" : \"teste123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}api/usuario/login",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "usuario",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cadastro",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nome\": \"alessandro\",\r\n    \"sobrenome\" : \"santana\",\r\n    \"email\":\"desantanasantos@gmail.com\",\r\n    \"telefone\":\"11945393125\",\r\n    \"genero\" : \"Masculino\",\r\n    \"senha\" : \"teste123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}api/usuario/cadastro",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "usuario",
+            "cadastro"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Esqueceu Senha",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}api/usuario/esqueceuSenha",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "usuario",
+            "esqueceuSenha"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "obter Veiculo",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "obterCarro",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}api/aula11/obterCarro",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula11",
+            "obterCarro"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "obter Moto",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "obter veiculos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "cor",
+            "value": "amarelo",
+            "type": "text"
+          },
+          {
+            "key": "marca",
+            "value": "ford",
+            "type": "text"
+          },
+          {
+            "key": "modelo",
+            "value": "fusion",
+            "type": "text"
+          },
+          {
+            "key": "placa",
+            "value": "Dex-3358",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{url}}api/aula11/obterVeiculo",
+          "host": [
+            "{{url}}api"
+          ],
+          "path": [
+            "aula11",
+            "obterVeiculo"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
